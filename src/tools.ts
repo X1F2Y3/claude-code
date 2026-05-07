@@ -59,6 +59,7 @@ const SubscribePRTool = feature('KAIROS_GITHUB_WEBHOOKS')
   : null
 /* eslint-enable custom-rules/no-process-env-top-level, @typescript-eslint/no-require-imports */
 import { TaskOutputTool } from '@claude-code-best/builtin-tools/tools/TaskOutputTool/TaskOutputTool.js'
+import { ExaSearchTool } from '@claude-code-best/builtin-tools/tools/ExaSearchTool/ExaSearchTool.js'
 import { WebSearchTool } from '@claude-code-best/builtin-tools/tools/WebSearchTool/WebSearchTool.js'
 import { TodoWriteTool } from '@claude-code-best/builtin-tools/tools/TodoWriteTool/TodoWriteTool.js'
 import { ExitPlanModeV2Tool } from '@claude-code-best/builtin-tools/tools/ExitPlanModeTool/ExitPlanModeV2Tool.js'
@@ -227,6 +228,7 @@ export function getAllBaseTools(): Tools {
     NotebookEditTool,
     WebFetchTool,
     TodoWriteTool,
+    ExaSearchTool,
     WebSearchTool,
     TaskStopTool,
     AskUserQuestionTool,
